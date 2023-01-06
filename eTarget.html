@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+   
+</head>
+<body>
+  <label>taper ville</label>
+  <input type="text" id="t1" />
+  <div id="main" ">ici data recu</div>
+  <input type="button" id="t2"  value="play"/>
+  <script>
+     let t2=document.querySelector("#t2");
+     t2.addEventListener("click",function(e){
+      if(e.target.getAttribute("disabled")!="")
+      {  e.target.setAttribute("disabled","");}
+       if(e.target.getAttribute("disabled")=="")
+       {e.target.setAttribute("disabled","disabled");}
+     });
+  </script>
+</body>
+</html>
